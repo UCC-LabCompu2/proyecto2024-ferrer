@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .header {
+            background-color: #b3e5fc;
+            padding: 20px;
+            text-align: center;
+        }
+        .header img {
+            max-width: 50px;
+            vertical-align: middle;
+        }
+        .header nav {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .header nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <img src="imagenes/logo.png" alt="Logo">
+    <nav>
+        <a href="#" onclick="showSection('home')">Inicio</a>
+        <a href="#" onclick="showSection('categories')">Categorías</a>
+        <a href="#" onclick="showSection('contact')">Contáctanos</a>
+        <a href="#" onclick="showSection('signup')">Regístrate</a>
+    </nav>
+</header>
+</body>
+</html>
