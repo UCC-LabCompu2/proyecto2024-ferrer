@@ -123,6 +123,49 @@
         .categories button:hover {
             background-color: #0277bd;
         }
+        .results {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .results img {
+            max-width: 150px;
+            border-radius: 10px;
+        }
+        .results .description {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .results .description p {
+            margin: 10px 0;
+        }
+        .results .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .results button {
+            background-color: #0288d1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 10px;
+            margin: 20px;
+            width: 100%;
+        }
+        .results button:hover {
+            background-color: #0277bd;
+        }
+
+
     </style>
 </head>
 <body>
@@ -177,6 +220,19 @@
         <input type="text" id="busqueda" name="busqueda" placeholder="ej: aventura, relajarte...">
 
         <button type="button" onclick="showSection('results')">Buscar Viaje</button>
+    </div>
+</section>
+<section id="results" class="section active">
+    <div class="results">
+        <img src="imagenes/resultado.png" alt="Lugar">
+        <div class="description">
+            <h3>Lugar que le eligio</h3>
+            <p>Aca va una breve descripción del lugar que le ha elegido y las actividades que puede realizar más precio y otras informaciones importantes.</p>
+        </div>
+        <div class="buttons">
+            <button>Repetir búsqueda</button>
+            <button>Aceptar viaje</button>
+        </div>
     </div>
 </section>
 <script>
