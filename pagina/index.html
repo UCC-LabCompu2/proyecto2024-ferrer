@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>proyecto agencia de viaje</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,13 +12,13 @@
         }
         .main {
             text-align: center;
-            background-image: url('imagenes/mianback.png'); /* Cambia a la ruta de tu imagen */
+            background-image: url('imagenes/mianback.png');
             background-size: cover;
             padding: 240px 20px;
             color: #1e1f22;
         }
         .main h1, .main p {
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
         }
         .main h1 {
             font-size: 2.5em;
@@ -54,6 +54,8 @@
             margin: 0 10px;
             color: #333;
             font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
         }
         .section {
             display: none;
@@ -61,15 +63,75 @@
         .section.active {
             display: block;
         }
+        .categories {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .categories h2 {
+            text-align: center;
+        }
+        .categories label {
+            display: block;
+            margin: 20px 0 10px;
+            font-weight: bold;
+        }
+        .categories input[type="text"], .categories select, .categories input[type="number"] {
+            width: 85%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .categories input[type="range"] {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .radio-group div {
+            text-align: center;
+            margin: 0 10px;
+        }
+        .radio-group input[type="radio"] {
+            display: block;
+            margin: 0 auto;
+        }
+        .categories .range-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .categories button {
+            background-color: #0288d1;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+        }
+        .categories button:hover {
+            background-color: #0277bd;
+        }
     </style>
 </head>
 <body>
 <header class="header">
     <img src="imagenes/logo.png" alt="Logo">
     <nav>
-        <a href="#" onclick="showSection('home')">Inicio</a>
-        <a href="#" onclick="showSection('categories')">Categorías</a>
-        <a href="#" onclick="showSection('signup')">Regístrate</a>
+        <a onclick="showSection('home')">Inicio</a>
+        <a onclick="showSection('categories')">Categorías</a>
+        <a onclick="showSection('signup')">Regístrate</a>
     </nav>
 </header>
 <section id="home" class="section active">
@@ -90,13 +152,23 @@
         </select>
 
         <label>¿Buscas un viaje nacional o internacional?</label>
-        <input type="radio" id="nacional" name="tipo_viaje" value="nacional" checked>
-        <label for="nacional">Nacional</label>
-        <input type="radio" id="internacional" name="tipo_viaje" value="internacional">
-        <label for="internacional">Internacional</label>
+        <div class="radio-group">
+            <div>
+                <input type="radio" id="nacional" name="tipo_viaje" value="nacional" checked>
+                <label for="nacional">Nacional</label>
+            </div>
+            <div>
+                <input type="radio" id="internacional" name="tipo_viaje" value="internacional">
+                <label for="internacional">Internacional</label>
+            </div>
+        </div>
 
         <label for="presupuesto">¿Con qué presupuesto estamos trabajando?</label>
-        <input type="range" id="presupuesto" name="presupuesto" min="100" max="10000" step="100">
+        <div class="range-labels">
+            <span>200 U$D</span>
+            <span>10000 U$D</span>
+        </div>
+        <input type="range" id="presupuesto" name="presupuesto" min="200" max="10000" step="100">
 
         <label for="viajeros">¿Con cuántos amigos/familia vas a viajar?</label>
         <input type="number" id="viajeros" name="viajeros" min="1" max="20" value="1">
