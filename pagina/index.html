@@ -55,6 +55,12 @@
             color: #333;
             font-weight: bold;
         }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -63,7 +69,6 @@
     <nav>
         <a href="#" onclick="showSection('home')">Inicio</a>
         <a href="#" onclick="showSection('categories')">Categorías</a>
-        <a href="#" onclick="showSection('contact')">Contáctanos</a>
         <a href="#" onclick="showSection('signup')">Regístrate</a>
     </nav>
 </header>
@@ -74,5 +79,45 @@
         <button onclick="showSection('categories')">Planifica tu viaje</button>
     </div>
 </section>
+<section id="categories" class="section">
+    <div class="categories">
+        <h2>Categorías</h2>
+        <label for="clima">¿Qué clima estás buscando?</label>
+        <select id="clima">
+            <option value="tropical">Tropical</option>
+            <option value="templado">Templado</option>
+            <option value="frío">Frío</option>
+        </select>
+
+        <label>¿Buscas un viaje nacional o internacional?</label>
+        <input type="radio" id="nacional" name="tipo_viaje" value="nacional" checked>
+        <label for="nacional">Nacional</label>
+        <input type="radio" id="internacional" name="tipo_viaje" value="internacional">
+        <label for="internacional">Internacional</label>
+
+        <label for="presupuesto">¿Con qué presupuesto estamos trabajando?</label>
+        <input type="range" id="presupuesto" name="presupuesto" min="100" max="10000" step="100">
+
+        <label for="viajeros">¿Con cuántos amigos/familia vas a viajar?</label>
+        <input type="number" id="viajeros" name="viajeros" min="1" max="20" value="1">
+
+        <label for="busqueda">¿Qué buscas de este viaje?</label>
+        <input type="text" id="busqueda" name="busqueda" placeholder="ej: aventura, relajarte...">
+
+        <button type="button" onclick="showSection('results')">Buscar Viaje</button>
+    </div>
+</section>
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            if (section.id === sectionId) {
+                section.classList.add('active');
+            } else {
+                section.classList.remove('active');
+            }
+        });
+    }
+</script>
 </body>
 </html>
