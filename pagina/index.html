@@ -9,16 +9,16 @@
 <header class="header">
     <img src="imagenes/logo.png" alt="Logo">
     <nav>
-        <a href="#home">Inicio</a>
-        <a href="#categories">Categorías</a>
-        <a href="#signup">Regístrate</a>
+        <a href="#home" onclick="showSection('home')">Inicio</a>
+        <a href="#categories" onclick="showSection('categories')">Categorías</a>
+        <a href="#signup" onclick="showSection('signup')">Regístrate</a>
     </nav>
 </header>
 <section id="home" class="section active">
     <div class="main">
         <h1>Organiza tu viaje y descubre el mundo</h1>
         <p>Organiza un viaje personalizado a tu presupuesto y preferencias</p>
-        <button onclick="location.href='#categories'">Planifica tu viaje</button>
+        <button onclick="showSection('categories')">Planifica tu viaje</button>
     </div>
 </section>
 <section id="categories" class="section">
@@ -56,7 +56,7 @@
         <label for="busqueda">¿Qué buscas de este viaje?</label>
         <input type="text" id="busqueda" name="busqueda" placeholder="ej: aventura, relajarte...">
 
-        <button type="button" onclick="location.href='#results'">Buscar Viaje</button>
+        <button type="button" onclick="showSection('results')">Buscar Viaje</button>
     </div>
 </section>
 <section id="results" class="section">
@@ -67,7 +67,7 @@
             <p>Aca va una breve descripción del lugar que le ha elegido y las actividades que puede realizar más precio y otras informaciones importantes.</p>
         </div>
         <div class="buttons">
-            <button onclick="location.href='#categories'">Repetir búsqueda</button>
+            <button onclick="showSection('categories')">Repetir búsqueda</button>
             <button>Aceptar viaje</button>
         </div>
     </div>
@@ -83,5 +83,17 @@
         <button>Registrarse</button>
     </div>
 </section>
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            if (section.id === sectionId) {
+                section.classList.add('active');
+            } else {
+                section.classList.remove('active');
+            }
+        });
+    }
+</script>
 </body>
 </html>
