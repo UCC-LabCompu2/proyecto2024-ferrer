@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+
 .main {
     text-align: center;
     background-image: url('imagenes/mianback.png');
@@ -11,17 +12,21 @@ body {
     padding: 240px 20px;
     color: #1e1f22;
 }
+
 .main h1, .main p {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
+
 .main h1 {
     font-size: 2.5em;
     margin: 0;
 }
+
 .main p {
     font-size: 1.2em;
     margin: 20px 0;
 }
+
 .main button {
     background-color: #0288d1;
     color: white;
@@ -31,19 +36,23 @@ body {
     font-size: 1em;
     border-radius: 5px;
 }
+
 .header {
     background-color: #b3e5fc;
     padding: 20px;
     text-align: center;
 }
+
 .header img {
     max-width: 50px;
     vertical-align: middle;
 }
+
 .header nav {
     display: inline-block;
     margin-left: 20px;
 }
+
 .header nav a {
     margin: 0 10px;
     color: #333;
@@ -51,12 +60,16 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
 .section {
     display: none;
+    padding: 20px;
 }
+
 .section.active {
     display: block;
 }
+
 .categories {
     max-width: 800px;
     margin: auto;
@@ -65,14 +78,17 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .categories h2 {
     text-align: center;
 }
+
 .categories label {
     display: block;
     margin: 20px 0 10px;
     font-weight: bold;
 }
+
 .categories input[type="text"], .categories select, .categories input[type="number"] {
     width: 85%;
     padding: 10px;
@@ -80,29 +96,35 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .categories input[type="range"] {
     width: 100%;
     margin-bottom: 20px;
 }
+
 .radio-group {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
 }
+
 .radio-group div {
     text-align: center;
     margin: 0 10px;
 }
+
 .radio-group input[type="radio"] {
     display: block;
     margin: 0 auto;
 }
+
 .categories .range-labels {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
 }
+
 .categories button {
     background-color: #0288d1;
     color: white;
@@ -114,9 +136,11 @@ body {
     display: block;
     width: 100%;
 }
+
 .categories button:hover {
     background-color: #0277bd;
 }
+
 .results {
     max-width: 1000px;
     margin: 40px auto;
@@ -125,57 +149,70 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
+
 .results img {
-    max-width: 150px;
+    max-width: 300px;
+    margin-right: 20px;
     border-radius: 10px;
 }
+
 .results .description {
     flex: 1;
-    margin-left: 20px;
 }
-.results .description p {
-    margin: 10px 0;
+
+.results .description h3 {
+    margin-top: 0;
 }
+
 .results .buttons {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
 }
-.results button {
+
+.results .buttons button {
     background-color: #0288d1;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: none;
     cursor: pointer;
-    font-size: 1em;
-    border-radius: 10px;
-    margin: 20px;
-    width: 100%;
+    font-size: 0.9em;
+    border-radius: 5px;
+    margin: 0 10px;
 }
-.results button:hover {
+
+.results .buttons button:hover {
     background-color: #0277bd;
 }
+
 .signup {
-    max-width: 800px;
-    margin: auto;
+    max-width: 400px;
+    margin: 40px auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .signup h2 {
     text-align: center;
 }
+
+.signup label {
+    display: block;
+    margin: 20px 0 10px;
+    font-weight: bold;
+}
+
 .signup input[type="text"], .signup input[type="email"], .signup input[type="password"] {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .signup button {
     background-color: #0288d1;
     color: white;
@@ -187,6 +224,21 @@ body {
     display: block;
     width: 100%;
 }
+
 .signup button:hover {
     background-color: #0277bd;
+}
+
+.footer {
+    background-color: #b3e5fc;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#canvas-section {
+    text-align: center;
+    padding: 20px;
 }

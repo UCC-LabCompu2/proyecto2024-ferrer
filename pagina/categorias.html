@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>proyecto agencia de viaje</title>
+    <meta name="author" content="Dante Ferrer">
+    <meta name="description" content="organiza tu viaje personalizado según tu presupuesto y preferencias. descubre el mundo con nuestra agencia de viajes.">
+    <meta name="keywords" content="viajes, agencia de viajes, planificación de viajes, vacaciones, destinos, turismo">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <img src="imagenes/logo.png" alt="Logo de la agencia de viaje">
+    <nav>
+        <a href="index.html">inicio</a>
+        <a href="categorias.html">categorías</a>
+        <a href="singup.html" >regístrate</a>
+    </nav>
+</div>
+<div class="categories">
+    <h2>categorías</h2>
+    <div>
+        <label for="clima">¿Qué clima estás buscando?</label>
+        <select id="clima">
+            <option value="tropical">Tropical</option>
+            <option value="templado">Templado</option>
+            <option value="frío">Frío</option>
+        </select>
+    </div>
+
+    <div>
+        <label>¿Buscas un viaje nacional o internacional?</label>
+        <div class="radio-group">
+            <div>
+                <input type="radio" id="nacional" name="tipo_viaje" value="nacional" checked>
+                <label for="nacional">Nacional</label>
+            </div>
+            <div>
+                <input type="radio" id="internacional" name="tipo_viaje" value="internacional">
+                <label for="internacional">Internacional</label>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <label for="presupuesto">¿Con qué presupuesto estamos trabajando?</label>
+        <div class="range-labels">
+            <span>200 u$d</span>
+            <span>10000 u$d</span>
+        </div>
+        <input type="range" id="presupuesto" name="presupuesto" min="200" max="10000" step="100">
+    </div>
+
+    <div>
+        <label for="viajeros">¿Con cuántos amigos/familia vas a viajar?</label>
+        <input type="number" id="viajeros" name="viajeros" min="1" max="20" value="1">
+    </div>
+
+    <div>
+        <label for="busqueda">¿Qué buscas de este viaje?</label>
+        <input type="text" id="busqueda" name="busqueda" placeholder="ej: aventura, relajarte..." maxlength="100">
+    </div>
+    <a href="resultados.html" >
+    <button >Buscar viaje</button>
+    </a>
+</div>
+</body>
+</html>

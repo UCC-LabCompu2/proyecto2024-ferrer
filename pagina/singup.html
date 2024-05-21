@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>proyecto agencia de viaje</title>
+    <title>singup</title>
     <meta name="author" content="Dante Ferrer">
     <meta name="description" content="organiza tu viaje personalizado según tu presupuesto y preferencias. descubre el mundo con nuestra agencia de viajes.">
     <meta name="keywords" content="viajes, agencia de viajes, planificación de viajes, vacaciones, destinos, turismo">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <div class="header">
     <img src="imagenes/logo.png" alt="Logo de la agencia de viaje">
@@ -17,21 +18,15 @@
         <a href="singup.html">registrarte</a>
     </nav>
 </div>
-<section id="home" class="section active">
-    <div class="main">
-        <h1>organiza tu viaje y descubre el mundo</h1>
-        <p>organiza un viaje personalizado a tu presupuesto y preferencias</p>
-        <a href="categorias.html" >
-        <button >planifica tu viaje</button>
-        </a>
+    <div class="signup">
+        <h2>regístrate</h2>
+        <label>
+            <input type="text" placeholder="nombre" maxlength="50">
+            <input type="email" placeholder="correo electrónico" maxlength="100">
+            <input type="password" placeholder="contraseña" maxlength="20">
+        </label>
+        <button>registrarse</button>
     </div>
-</section>
 
-<section id="canvas-section" class="section">
-    <canvas id="myCanvas" width="400" height="400"></canvas>
-</section>
-<footer class="footer">
-    <p>proyecto pagina web laboratorio de computos 2</p>
-</footer>
 </body>
 </html>
