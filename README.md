@@ -6,7 +6,7 @@
 
 [Tecnologías Usadas](#tecnologías-usadas)
 
-[Ingresa a pagina](https://github.com/UCC-LabCompu2/proyecto2024-ferrer/)
+[Ingresa a pagina](https://ucc-labcompu2.github.io/proyecto2024-ferrer/)
 
 ## Autor
 * **Ferrer Dante**
@@ -19,4 +19,4 @@
 * HTML5
 * CSS3
 
-Link del Proyecto: [agencia de viaje]( https://ucc-labcompu2.github.io/proyecto2024-ferrer/)
+Link del Proyecto: [agencia de viaje](https://ucc-labcompu2.github.io/proyecto2024-ferrer/)
