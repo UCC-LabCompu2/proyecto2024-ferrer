@@ -19,4 +19,4 @@
 * HTML5
 * CSS3
 
-Link del Proyecto: [agencia de viaje](https://github.com/UCC-LabCompu2/proyecto2024-ferrer/)
+Link del Proyecto: [agencia de viaje]( https://ucc-labcompu2.github.io/proyecto2024-ferrer/)
