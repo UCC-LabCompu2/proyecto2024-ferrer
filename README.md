@@ -1,19 +1,22 @@
-#agencia de viaje
-[alumnos](#alumno)
-[descripcion](#descipcion)
-[tecnologias_usadas](#tecnologias_usadas)
-[ingerse_proyecto](https://github.com/UCC-LabCompu2/proyecto2024-ferrer/blob/main/pagina/index.html)
-##alumnos
-* **Ferrer** Dante
+# agencia de viaje
 
-##descripcion
-*proyecto 2024*: Pagina para encontrar viajes.
+[Autor](#autor)
 
-email
-2309192@ucc.edu.ar
+[Descripción](#descripción)
 
-##tecnologias usadas
-*html5
-*css3
+[Tecnologías Usadas](#tecnologías-usadas)
 
-[link del proyecto](https://github.com/UCC-LabCompu2/proyecto2024-ferrer/blob/main/pagina/index.html)
+[Ingresa a pagina](https://ucc-labcompu2.github.io/proyecto2024-ferrer/)
+
+## Autor
+* **Ferrer Dante**
+## Descripción:
+* es una pagina que te ayuda a encontrar un viaje apartir de tus criterios.
+  | Email | Autor |
+  |-------|--------|
+  2309192@ucc.edu.ar | Dante |
+### Tecnologías Usadas
+* HTML5
+* CSS3
+
+Link del Proyecto: [agencia de viaje](https://ucc-labcompu2.github.io/proyecto2024-ferrer/)
