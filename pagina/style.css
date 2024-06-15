@@ -37,23 +37,23 @@ body {
     border-radius: 5px;
 }
 
-.header {
+header {
     background-color: #b3e5fc;
     padding: 20px;
     text-align: center;
 }
 
-.header img {
+header img {
     max-width: 50px;
     vertical-align: middle;
 }
 
-.header nav {
+header nav {
     display: inline-block;
     margin-left: 20px;
 }
 
-.header nav a {
+header nav a {
     margin: 0 10px;
     color: #333;
     font-weight: bold;
@@ -236,6 +236,8 @@ body {
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-family: 'Roboto',sans-serif;
+
 }
 
 #canvas-section {
