@@ -1,36 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>proyecto agencia de viaje</title>
+    <title>Resultado del viaje</title>
     <meta name="author" content="Dante Ferrer">
-    <meta name="description" content="organiza tu viaje personalizado según tu presupuesto y preferencias. descubre el mundo con nuestra agencia de viajes.">
-    <meta name="keywords" content="viajes, agencia de viajes, planificación de viajes, vacaciones, destinos, turismo">
+    <meta name="description" content="Resultado de la búsqueda de viaje personalizado.">
+    <meta name="keywords" content="viajes, agencia de viajes, destino, resultados">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
-
 </head>
 <body>
 <header>
     <img src="imagenes/logo.png" alt="Logo de la agencia de viaje">
     <nav>
-        <a href="index.html">inicio</a>
-        <a href="categorias.html" >categorías</a>
-        <a href="singup.html">registrarte</a>
+        <a href="index.html">Inicio</a>
+        <a href="categorias.html">Categorías</a>
+        <a href="singup.html">Registrarte</a>
     </nav>
 </header>
 <div class="results">
-    <img src="imagenes/resultado.png" alt="imagen del lugar que la agencia eligio">
+    <img id="resultado-imagen" src="imagenes/resultado.png" alt="Imagen del lugar elegido para el viaje">
     <div class="description">
-        <h3>lugar que le eligio</h3>
-        <p>aca va una breve descripción del lugar que le ha elegido y las actividades que puede realizar más precio y otras informaciones importantes.</p>
+        <h3 id="resultado-titulo">Lugar elegido para el viaje</h3>
+        <p id="resultado-descripcion">Descripción del lugar elegido y las actividades disponibles, así como información sobre precios y otras consideraciones importantes.</p>
     </div>
     <div class="buttons">
-        <a href="categorias.html" >
-            <button >repetir búsqueda</button>
+        <a href="categorias.html">
+            <button>Repetir búsqueda</button>
         </a>
         <a>
-            <button>aceptar viaje</button>
+            <button>Aceptar viaje</button>
         </a>
     </div>
 </div>
