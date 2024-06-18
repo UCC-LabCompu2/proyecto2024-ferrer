@@ -9,32 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
-
 </head>
 <body>
 <header>
     <img src="imagenes/logo.png" alt="Logo de la agencia de viaje">
     <nav>
-        <a href="index.html">inicio</a>
-        <a href="categorias.html" >categorías</a>
-        <a href="singup.html">registrarte</a>
+        <a href="index.html" class="nav-link" onclick="mostrarCargaYRedirigir(event, 'index.html')">Inicio</a>
+        <a href="categorias.html" class="nav-link" onclick="mostrarCargaYRedirigir(event, 'categorias.html')">Categorías</a>
+        <a href="singup.html" class="nav-link" onclick="mostrarCargaYRedirigir(event, 'singup.html')">Regístrate</a>
     </nav>
 </header>
 <section id="home" class="section active">
     <div class="main">
-        <h1>organiza tu viaje y descubre el mundo</h1>
-        <p>organiza un viaje personalizado a tu presupuesto y preferencias</p>
-        <a href="categorias.html" >
-            <button >planifica tu viaje</button>
+        <h1>Organiza tu viaje y descubre el mundo</h1>
+        <p>Organiza un viaje personalizado a tu presupuesto y preferencias</p>
+        <a href="categorias.html" class="nav-link" onclick="mostrarCargaYRedirigir(event, 'categorias.html')">
+            <button>Planifica tu viaje</button>
         </a>
     </div>
 </section>
-
-<section id="canvas-section" class="section">
-    <canvas id="myCanvas" width="400" height="400"></canvas>
-</section>
+<canvas id="loadingCanvas" style="display: none; position: fixed; top: 50%; left: 50%; width: 100px; height: 100px; transform: translate(-50%, -50%); z-index: 1000; background: rgba(255, 255, 255, 0.8);"></canvas>
 <footer class="footer">
-    <p>proyecto pagina web laboratorio de computos 2</p>
+    <p>Proyecto página web laboratorio de cómputo 2</p>
 </footer>
 <script src="funciones.js"></script>
 </body>

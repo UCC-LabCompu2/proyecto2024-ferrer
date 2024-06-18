@@ -20,7 +20,7 @@
 </header>
 <div class="categories">
     <h2>Categorías</h2>
-    <form id="categoriasForm">
+    <form id="categoriasForm" onsubmit="validarFormularioCategorias(event)">
         <div>
             <label for="clima">¿Qué clima estás buscando?</label>
             <select id="clima">
@@ -64,7 +64,7 @@
         </div>
 
         <div>
-            <button id="buscarViaje" type="button">Buscar viaje</button>
+            <button id="buscarViaje" type="button" onclick="capturarDatosYRedirigir()">Buscar viaje</button>
         </div>
     </form>
 </div>

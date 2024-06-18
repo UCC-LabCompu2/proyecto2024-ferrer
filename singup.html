@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
 <header>
     <img src="imagenes/logo.png" alt="Logo de la agencia de viaje">
@@ -21,7 +20,7 @@
 </header>
 <div class="signup">
     <h2>Regístrate</h2>
-    <form id="registroForm">
+    <form id="registroForm" onsubmit="validarFormularioRegistro(event)">
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" placeholder="Nombre" id="nombre" maxlength="50">
         <label for="email">Correo Electrónico:</label>
