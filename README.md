@@ -6,15 +6,15 @@
 
 [Tecnologías Usadas](#tecnologías-usadas)
 
-[Ingresa a pagina](https://ucc-labcompu2.github.io/proyecto2024-ferrer/)
+[Ingresá a página](https://ucc-labcompu2.github.io/proyecto2024-ferrer/)
 
 ## Autor
-* **Ferrer Dante**
+* ** Ferrer Dante**
 ## Descripción:
 * es una pagina que te ayuda a encontrar un viaje apartir de tus criterios.
   | Email | Autor |
   |-------|--------|
-  2309192@ucc.edu.ar | Dante |
+  |2309192@ucc.edu.ar | Dante |
 ### Tecnologías Usadas
 * HTML5
 * CSS3
