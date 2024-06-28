@@ -261,9 +261,9 @@ header nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-    width: 100px; /* Asegura que el contenedor tenga el mismo tamaño que el canvas */
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+    width: 100px;
     height: 100px;
 }
 
