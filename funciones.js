@@ -1,4 +1,8 @@
-
+/**
+ * Valida el formulario de registro
+ * @method validarFormularioRegistro
+ * @param {Event} event - El evento de submit del formulario
+ */
 const validarFormularioRegistro = (event) => {
     event.preventDefault();
     const nombre = document.getElementById('nombre').value;
@@ -24,6 +28,11 @@ const validarFormularioRegistro = (event) => {
     window.location.href = 'registro_exitoso.html';
 };
 
+/**
+ * Valida el formulario de búsqueda de categorías
+ * @method validarFormularioCategorias
+ * @param {Event} event - El evento de submit del formulario
+ */
 const validarFormularioCategorias = (event) => {
     event.preventDefault();
     const busqueda = document.getElementById('busqueda').value;
@@ -36,6 +45,11 @@ const validarFormularioCategorias = (event) => {
     window.location.href = 'resultados.html';
 };
 
+/**
+ * Captura los datos del formulario y redirige a la página de resultados
+ * @method capturarDatosYRedirigir
+ * @param {Event} event - El evento de submit del formulario
+ */
 const capturarDatosYRedirigir = (event) => {
     event.preventDefault();
     const busqueda = document.getElementById('busqueda').value;
@@ -56,6 +70,11 @@ const capturarDatosYRedirigir = (event) => {
     mostrarCargaConIcono(datosViaje.climaSeleccionado);
 };
 
+/**
+ * Muestra una animación de carga con un icono dependiendo del clima seleccionado
+ * @method mostrarCargaConIcono
+ * @param {string} clima - El clima seleccionado por el usuario
+ */
 const mostrarCargaConIcono = (clima) => {
     const canvas = document.getElementById('loadingCanvas');
     const contexto = canvas.getContext('2d');
@@ -111,6 +130,10 @@ const mostrarCargaConIcono = (clima) => {
     }, 2000);
 };
 
+/**
+ * Actualiza los resultados en la página de resultados basados en los datos almacenados en localStorage
+ * @method actualizarResultados
+ */
 const actualizarResultados = () => {
     const datosViaje = JSON.parse(localStorage.getItem('datosViaje'));
 
@@ -148,4 +171,3 @@ Viajarás con ${datosViaje.cantidadViajeros} persona(s), buscando ${datosViaje.b
 if (window.location.pathname.endsWith('resultados.html')) {
     actualizarResultados();
 }
-
